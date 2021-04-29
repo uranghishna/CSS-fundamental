@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity Vs RGBA</title>
+</head>
+<body>
+    <style>
+        div{
+            padding: 20px;
+            max-width: 100px;
+            font-family: consolas;
+            font-weight: bold;
+            color: #fff;
+        }
+        .opacity{
+            opacity: 0.4;
+        }
+        .red-basic{
+            background: red;
+        }
+        .red-rgba{
+            background:rgba(255, 0, 0, 0.4)
+        }
+        .blue-basic{
+            background: blue;
+        }
+    </style>
+
+    <h3>OPACITY</h3>
+    <div class="red-basic opacity">
+        <div class="blue-basic"></div>
+    </div>
+    <h3>RGBA</h3>
+    <div class="red-rgba">
+        <div class="blue-basic"></div>
+    </div>
+    
+</body>
+</html>
